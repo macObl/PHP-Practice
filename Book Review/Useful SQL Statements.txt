@@ -1,0 +1,23 @@
+﻿Use the following SQL to retrieve books from the Book table, excluding 
+those books which the user has already added to his/her shopping cart:
+
+	SELECT BookId, Title, Price FROM Book WHERE BookId NOT IN 
+        (SELECT BookId FROM ShoppingCart WHERE CustomerId = :userId
+		
+
+Use the following SQL statement to retrieve the books in a user’s shopping cart
+
+    SELECT Book.BookId, Book.Title, Book.Price, ShoppingCart.Copies 
+        FROM Book, ShoppingCart
+        WHERE Book.BookId = ShoppingCart.BookId AND ShoppingCart.CustomerId = :userId 
+
+
+Use the following SQL statement to update the number of copies of a book in a user’s shopping cart:
+
+    UPDATE ShoppingCart SET Copies = $newCopy 
+        WHERE BookId = :bookId AND CustomerId = :userId
+
+
+Use the following SQL statement to delete a book from a user’s shopping cart:
+       
+    DELETE FROM ShoppingCart WHERE BookId = :bookId AND CustomerId = :userId

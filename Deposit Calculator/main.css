@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-Sep-2018, 11:43:25 AM
+    Author     : Kyle
+*/
+
+h1 {
+    text-align: center;
+}
+
+form {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.form-group2 .radio-inline{
+    display:inline;
+    padding: 5px;
+}
+
+.control-label {
+    display: inline;
+    padding: 10px;
+}
