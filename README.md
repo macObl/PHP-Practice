@@ -1,2 +1,2 @@
 # PHP-Practice
-These are some php apps I had made during school
+These are some PHP apps I had made during school
